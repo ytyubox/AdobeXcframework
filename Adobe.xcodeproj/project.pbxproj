@@ -3,11 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		D21BB42A26E8954C007243E1 /* Adobe.h in Headers */ = {isa = PBXBuildFile; fileRef = D21BB42826E8954C007243E1 /* Adobe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D21BB43226E8963B007243E1 /* AEPIdentity in Frameworks */ = {isa = PBXBuildFile; productRef = D21BB43126E8963B007243E1 /* AEPIdentity */; };
+		D21BB43426E8963B007243E1 /* AEPSignal in Frameworks */ = {isa = PBXBuildFile; productRef = D21BB43326E8963B007243E1 /* AEPSignal */; };
+		D21BB43626E8963B007243E1 /* AEPCore in Frameworks */ = {isa = PBXBuildFile; productRef = D21BB43526E8963B007243E1 /* AEPCore */; };
+		D21BB43826E8963B007243E1 /* AEPServices in Frameworks */ = {isa = PBXBuildFile; productRef = D21BB43726E8963B007243E1 /* AEPServices */; };
+		D21BB43A26E8963B007243E1 /* AEPLifecycle in Frameworks */ = {isa = PBXBuildFile; productRef = D21BB43926E8963B007243E1 /* AEPLifecycle */; };
+		D21BB43D26E896A3007243E1 /* AEPEdge in Frameworks */ = {isa = PBXBuildFile; productRef = D21BB43C26E896A3007243E1 /* AEPEdge */; };
+		D21BB44026E89707007243E1 /* AEPEdgeConsent in Frameworks */ = {isa = PBXBuildFile; productRef = D21BB43F26E89707007243E1 /* AEPEdgeConsent */; };
+		D21BB44326E89731007243E1 /* AEPEdgeIdentity in Frameworks */ = {isa = PBXBuildFile; productRef = D21BB44226E89731007243E1 /* AEPEdgeIdentity */; };
+		D21BB44626E8974A007243E1 /* AEPUserProfile in Frameworks */ = {isa = PBXBuildFile; productRef = D21BB44526E8974A007243E1 /* AEPUserProfile */; };
+		D21BB44926E8975A007243E1 /* AEPAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D21BB44826E8975A007243E1 /* AEPAnalytics */; };
+		D21BB44C26E89773007243E1 /* AEPAssurance in Frameworks */ = {isa = PBXBuildFile; productRef = D21BB44B26E89773007243E1 /* AEPAssurance */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +32,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D21BB43D26E896A3007243E1 /* AEPEdge in Frameworks */,
+				D21BB43626E8963B007243E1 /* AEPCore in Frameworks */,
+				D21BB43826E8963B007243E1 /* AEPServices in Frameworks */,
+				D21BB44626E8974A007243E1 /* AEPUserProfile in Frameworks */,
+				D21BB44926E8975A007243E1 /* AEPAnalytics in Frameworks */,
+				D21BB43226E8963B007243E1 /* AEPIdentity in Frameworks */,
+				D21BB44326E89731007243E1 /* AEPEdgeIdentity in Frameworks */,
+				D21BB43426E8963B007243E1 /* AEPSignal in Frameworks */,
+				D21BB44C26E89773007243E1 /* AEPAssurance in Frameworks */,
+				D21BB43A26E8963B007243E1 /* AEPLifecycle in Frameworks */,
+				D21BB44026E89707007243E1 /* AEPEdgeConsent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +102,19 @@
 			dependencies = (
 			);
 			name = Adobe;
+			packageProductDependencies = (
+				D21BB43126E8963B007243E1 /* AEPIdentity */,
+				D21BB43326E8963B007243E1 /* AEPSignal */,
+				D21BB43526E8963B007243E1 /* AEPCore */,
+				D21BB43726E8963B007243E1 /* AEPServices */,
+				D21BB43926E8963B007243E1 /* AEPLifecycle */,
+				D21BB43C26E896A3007243E1 /* AEPEdge */,
+				D21BB43F26E89707007243E1 /* AEPEdgeConsent */,
+				D21BB44226E89731007243E1 /* AEPEdgeIdentity */,
+				D21BB44526E8974A007243E1 /* AEPUserProfile */,
+				D21BB44826E8975A007243E1 /* AEPAnalytics */,
+				D21BB44B26E89773007243E1 /* AEPAssurance */,
+			);
 			productName = Adobe;
 			productReference = D21BB42526E8954C007243E1 /* Adobe.framework */;
 			productType = "com.apple.product-type.framework";
@@ -106,6 +141,15 @@
 				Base,
 			);
 			mainGroup = D21BB41B26E8954C007243E1;
+			packageReferences = (
+				D21BB43026E8963B007243E1 /* XCRemoteSwiftPackageReference "aepsdk-core-ios" */,
+				D21BB43B26E896A3007243E1 /* XCRemoteSwiftPackageReference "aepsdk-edge-ios" */,
+				D21BB43E26E89707007243E1 /* XCRemoteSwiftPackageReference "aepsdk-edgeconsent-ios" */,
+				D21BB44126E89731007243E1 /* XCRemoteSwiftPackageReference "aepsdk-edgeidentity-ios" */,
+				D21BB44426E8974A007243E1 /* XCRemoteSwiftPackageReference "aepsdk-userprofile-ios" */,
+				D21BB44726E8975A007243E1 /* XCRemoteSwiftPackageReference "aepsdk-analytics-ios" */,
+				D21BB44A26E89773007243E1 /* XCRemoteSwiftPackageReference "aepsdk-assurance-ios" */,
+			);
 			productRefGroup = D21BB42626E8954C007243E1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -326,6 +370,123 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D21BB43026E8963B007243E1 /* XCRemoteSwiftPackageReference "aepsdk-core-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adobe/aepsdk-core-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.3.0;
+			};
+		};
+		D21BB43B26E896A3007243E1 /* XCRemoteSwiftPackageReference "aepsdk-edge-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adobe/aepsdk-edge-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.2;
+			};
+		};
+		D21BB43E26E89707007243E1 /* XCRemoteSwiftPackageReference "aepsdk-edgeconsent-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adobe/aepsdk-edgeconsent-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		D21BB44126E89731007243E1 /* XCRemoteSwiftPackageReference "aepsdk-edgeidentity-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adobe/aepsdk-edgeidentity-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		D21BB44426E8974A007243E1 /* XCRemoteSwiftPackageReference "aepsdk-userprofile-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adobe/aepsdk-userprofile-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.1;
+			};
+		};
+		D21BB44726E8975A007243E1 /* XCRemoteSwiftPackageReference "aepsdk-analytics-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adobe/aepsdk-analytics-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.1;
+			};
+		};
+		D21BB44A26E89773007243E1 /* XCRemoteSwiftPackageReference "aepsdk-assurance-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adobe/aepsdk-assurance-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D21BB43126E8963B007243E1 /* AEPIdentity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D21BB43026E8963B007243E1 /* XCRemoteSwiftPackageReference "aepsdk-core-ios" */;
+			productName = AEPIdentity;
+		};
+		D21BB43326E8963B007243E1 /* AEPSignal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D21BB43026E8963B007243E1 /* XCRemoteSwiftPackageReference "aepsdk-core-ios" */;
+			productName = AEPSignal;
+		};
+		D21BB43526E8963B007243E1 /* AEPCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D21BB43026E8963B007243E1 /* XCRemoteSwiftPackageReference "aepsdk-core-ios" */;
+			productName = AEPCore;
+		};
+		D21BB43726E8963B007243E1 /* AEPServices */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D21BB43026E8963B007243E1 /* XCRemoteSwiftPackageReference "aepsdk-core-ios" */;
+			productName = AEPServices;
+		};
+		D21BB43926E8963B007243E1 /* AEPLifecycle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D21BB43026E8963B007243E1 /* XCRemoteSwiftPackageReference "aepsdk-core-ios" */;
+			productName = AEPLifecycle;
+		};
+		D21BB43C26E896A3007243E1 /* AEPEdge */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D21BB43B26E896A3007243E1 /* XCRemoteSwiftPackageReference "aepsdk-edge-ios" */;
+			productName = AEPEdge;
+		};
+		D21BB43F26E89707007243E1 /* AEPEdgeConsent */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D21BB43E26E89707007243E1 /* XCRemoteSwiftPackageReference "aepsdk-edgeconsent-ios" */;
+			productName = AEPEdgeConsent;
+		};
+		D21BB44226E89731007243E1 /* AEPEdgeIdentity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D21BB44126E89731007243E1 /* XCRemoteSwiftPackageReference "aepsdk-edgeidentity-ios" */;
+			productName = AEPEdgeIdentity;
+		};
+		D21BB44526E8974A007243E1 /* AEPUserProfile */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D21BB44426E8974A007243E1 /* XCRemoteSwiftPackageReference "aepsdk-userprofile-ios" */;
+			productName = AEPUserProfile;
+		};
+		D21BB44826E8975A007243E1 /* AEPAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D21BB44726E8975A007243E1 /* XCRemoteSwiftPackageReference "aepsdk-analytics-ios" */;
+			productName = AEPAnalytics;
+		};
+		D21BB44B26E89773007243E1 /* AEPAssurance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D21BB44A26E89773007243E1 /* XCRemoteSwiftPackageReference "aepsdk-assurance-ios" */;
+			productName = AEPAssurance;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D21BB41C26E8954C007243E1 /* Project object */;
 }
