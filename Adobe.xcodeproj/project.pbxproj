@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D21BB42A26E8954C007243E1 /* Adobe.h in Headers */ = {isa = PBXBuildFile; fileRef = D21BB42826E8954C007243E1 /* Adobe.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D21BB43226E8963B007243E1 /* AEPIdentity in Frameworks */ = {isa = PBXBuildFile; productRef = D21BB43126E8963B007243E1 /* AEPIdentity */; };
 		D21BB43426E8963B007243E1 /* AEPSignal in Frameworks */ = {isa = PBXBuildFile; productRef = D21BB43326E8963B007243E1 /* AEPSignal */; };
 		D21BB43626E8963B007243E1 /* AEPCore in Frameworks */ = {isa = PBXBuildFile; productRef = D21BB43526E8963B007243E1 /* AEPCore */; };
@@ -19,12 +18,13 @@
 		D21BB44626E8974A007243E1 /* AEPUserProfile in Frameworks */ = {isa = PBXBuildFile; productRef = D21BB44526E8974A007243E1 /* AEPUserProfile */; };
 		D21BB44926E8975A007243E1 /* AEPAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D21BB44826E8975A007243E1 /* AEPAnalytics */; };
 		D21BB44C26E89773007243E1 /* AEPAssurance in Frameworks */ = {isa = PBXBuildFile; productRef = D21BB44B26E89773007243E1 /* AEPAssurance */; };
+		D21BB44E26E898CC007243E1 /* AdobeVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21BB44D26E898CC007243E1 /* AdobeVersion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D21BB42526E8954C007243E1 /* Adobe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Adobe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D21BB42826E8954C007243E1 /* Adobe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Adobe.h; sourceTree = "<group>"; };
 		D21BB42926E8954C007243E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D21BB44D26E898CC007243E1 /* AdobeVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdobeVersion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +68,8 @@
 		D21BB42726E8954C007243E1 /* Adobe */ = {
 			isa = PBXGroup;
 			children = (
-				D21BB42826E8954C007243E1 /* Adobe.h */,
 				D21BB42926E8954C007243E1 /* Info.plist */,
+				D21BB44D26E898CC007243E1 /* AdobeVersion.swift */,
 			);
 			path = Adobe;
 			sourceTree = "<group>";
@@ -81,7 +81,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D21BB42A26E8954C007243E1 /* Adobe.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +128,7 @@
 				TargetAttributes = {
 					D21BB42426E8954C007243E1 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -174,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D21BB44E26E898CC007243E1 /* AdobeVersion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +306,7 @@
 		D21BB42E26E8954C007243E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -320,6 +322,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.inkinyu.Adobe;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -328,6 +331,7 @@
 		D21BB42F26E8954C007243E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;

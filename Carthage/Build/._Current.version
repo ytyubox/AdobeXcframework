@@ -1,0 +1,19 @@
+{
+  "commitish" : "d0af6424db6a4a7632d28125806a05e14ca80752",
+  "iOS" : [
+    {
+      "swiftToolchainVersion" : "5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)",
+      "hash" : "8f6dcd692c02ef27a84f1cb0dd4ed796014c17ccb7f8c2064277bd779efc92d0",
+      "name" : "Adobe",
+      "container" : "Adobe.xcframework",
+      "identifier" : "ios-arm64"
+    },
+    {
+      "swiftToolchainVersion" : "5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)",
+      "hash" : "265290a1ca6295835af3aca67ad09acf3d4cbc8e93cb87ffd99878def39ee0b1",
+      "name" : "Adobe",
+      "container" : "Adobe.xcframework",
+      "identifier" : "ios-arm64_x86_64-simulator"
+    }
+  ]
+}

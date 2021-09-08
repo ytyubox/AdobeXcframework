@@ -1,0 +1,4 @@
+framework module Adobe {
+  header "Adobe-Swift.h"
+  requires objc
+}
